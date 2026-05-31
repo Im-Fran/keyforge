@@ -1,0 +1,119 @@
+name: Bug Report
+description: Something is broken or behaving unexpectedly in Keyforge.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report. The more detail you provide, the faster it can be triaged.
+        Because Keyforge runs entirely in the browser, please include your browser and OS information below.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug — what you observed vs. what you expected.
+      placeholder: "When I do X in step Y, Z happens instead of W."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Exact steps that reliably reproduce the issue.
+      placeholder: |
+        1. Open the app
+        2. Complete Step 1 (system entropy)
+        3. Move the mouse in Step 2
+        4. Click "Generate" — see error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: step
+    attributes:
+      label: Which step does the bug occur in?
+      description: Leave blank if it is not step-specific.
+      options:
+        - "Step 1 — System entropy"
+        - "Step 2 — Human entropy (mouse/keyboard)"
+        - "Step 3 — Key generation / output"
+        - "Settings / tweaks panel"
+        - "General / layout"
+        - "Not step-specific"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: key_type
+    attributes:
+      label: Key type in use (if applicable)
+      options:
+        - Hex
+        - Base64 URL-safe
+        - API key (alphanumeric)
+        - UUID v4
+        - PIN
+        - Not applicable
+    validations:
+      required: false
+
+  - type: dropdown
+    id: hash_algo
+    attributes:
+      label: Hash algorithm in use (if applicable)
+      options:
+        - SHA-256
+        - SHA-384
+        - SHA-512
+        - Not applicable
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: "e.g. Chrome 126, Firefox 128, Safari 17.5"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - iOS
+        - Android
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console errors or screenshots
+      description: Open DevTools (F12) and paste any errors from the Console tab. Attach screenshots if helpful.
+      render: shell
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this is not a duplicate.
+          required: true
+        - label: I reproduced the issue in a clean browser profile or private/incognito window (to rule out extensions).
+          required: true

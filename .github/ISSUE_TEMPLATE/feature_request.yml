@@ -1,0 +1,67 @@
+name: Feature Request
+description: Suggest a new feature or improvement to Keyforge.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make Keyforge better. Please be as specific as possible — especially around
+        how the feature fits the existing 3-step wizard and the "100% offline, browser-only" design constraint.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the pain point, limitation, or use case that motivates this request.
+      placeholder: "I need to generate keys of type X, but Keyforge currently only supports Y and Z."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe what you would like to happen. Be specific about UI changes, new output formats, entropy sources, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you tried any workarounds? Are there other tools that do this today?
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Feature area
+      options:
+        - New key / output format
+        - Entropy collection (system or human)
+        - Hash / derivation algorithm
+        - UI / UX
+        - Accessibility
+        - Performance
+        - Developer experience (build, deploy)
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Compatibility with project constraints
+      description: Keyforge is a fully browser-based, offline-capable SPA. Please confirm your proposal fits within these constraints.
+      options:
+        - label: This feature does not require a backend server or external network calls.
+          required: false
+        - label: This feature does not send entropy, generated keys, or any user data off-device.
+          required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and discussions and this has not already been proposed.
+          required: true
