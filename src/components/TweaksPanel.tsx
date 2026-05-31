@@ -1,21 +1,5 @@
 import { useState, useRef, useEffect, useCallback, type ReactNode } from "react";
 
-// ---- useTweaks ---------------------------------------------------------------
-export type TweakValues = {
-  accentHue: number;
-  dark: boolean;
-  defaultType: string;
-  hashAlgo: string;
-};
-
-export function useTweaks(defaults: TweakValues): [TweakValues, (key: keyof TweakValues, val: unknown) => void] {
-  const [values, setValues] = useState<TweakValues>(defaults);
-  const setTweak = useCallback((key: keyof TweakValues, val: unknown) => {
-    setValues((prev) => ({ ...prev, [key]: val }));
-  }, []);
-  return [values, setTweak];
-}
-
 // ---- TweaksPanel -------------------------------------------------------------
 interface TweaksPanelProps {
   open: boolean;
@@ -25,7 +9,7 @@ interface TweaksPanelProps {
 
 export function TweaksPanel({ open, onClose, children }: TweaksPanelProps) {
   const dragRef = useRef<HTMLDivElement>(null);
-  const offsetRef = useRef({ x: 16, y: 16 });
+  const [offset, setOffset] = useState({ x: 16, y: 16 });
   const PAD = 16;
 
   const clampToViewport = useCallback(() => {
@@ -34,12 +18,10 @@ export function TweaksPanel({ open, onClose, children }: TweaksPanelProps) {
     const w = panel.offsetWidth, h = panel.offsetHeight;
     const maxRight = Math.max(PAD, window.innerWidth - w - PAD);
     const maxBottom = Math.max(PAD, window.innerHeight - h - PAD);
-    offsetRef.current = {
-      x: Math.min(maxRight, Math.max(PAD, offsetRef.current.x)),
-      y: Math.min(maxBottom, Math.max(PAD, offsetRef.current.y)),
-    };
-    panel.style.right = offsetRef.current.x + "px";
-    panel.style.bottom = offsetRef.current.y + "px";
+    setOffset((prev) => ({
+      x: Math.min(maxRight, Math.max(PAD, prev.x)),
+      y: Math.min(maxBottom, Math.max(PAD, prev.y)),
+    }));
   }, []);
 
   useEffect(() => {
@@ -58,11 +40,17 @@ export function TweaksPanel({ open, onClose, children }: TweaksPanelProps) {
     const startRight = window.innerWidth - r.right;
     const startBottom = window.innerHeight - r.bottom;
     const move = (ev: MouseEvent) => {
-      offsetRef.current = {
-        x: startRight - (ev.clientX - sx),
-        y: startBottom - (ev.clientY - sy),
-      };
-      clampToViewport();
+      const newX = startRight - (ev.clientX - sx);
+      const newY = startBottom - (ev.clientY - sy);
+      const p = dragRef.current;
+      if (!p) return;
+      const w = p.offsetWidth, h = p.offsetHeight;
+      const maxRight = Math.max(PAD, window.innerWidth - w - PAD);
+      const maxBottom = Math.max(PAD, window.innerHeight - h - PAD);
+      setOffset({
+        x: Math.min(maxRight, Math.max(PAD, newX)),
+        y: Math.min(maxBottom, Math.max(PAD, newY)),
+      });
     };
     const up = () => {
       window.removeEventListener("mousemove", move);
@@ -77,7 +65,7 @@ export function TweaksPanel({ open, onClose, children }: TweaksPanelProps) {
     <div
       ref={dragRef}
       className="twk-panel"
-      style={{ right: offsetRef.current.x, bottom: offsetRef.current.y, animation: "fadeUp .18s both" }}
+      style={{ right: offset.x, bottom: offset.y, animation: "fadeUp .18s both" }}
     >
       <div className="twk-hd" onMouseDown={onDragStart}>
         <b>Tweaks</b>
