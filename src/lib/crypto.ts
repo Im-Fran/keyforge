@@ -39,7 +39,7 @@ function strToBytes(s: string): Uint8Array {
   return new TextEncoder().encode(String(s));
 }
 
-function concatBytes(chunks: Uint8Array[]): Uint8Array {
+function concatBytes(chunks: Uint8Array[]): Uint8Array<ArrayBuffer> {
   let len = 0;
   for (const c of chunks) len += c.length;
   const out = new Uint8Array(len);

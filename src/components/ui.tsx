@@ -18,9 +18,10 @@ interface ButtonProps {
   size?: "md" | "sm" | "icon";
   style?: CSSProperties;
   full?: boolean;
+  title?: string;
 }
 
-export function Button({ children, onClick, variant = "primary", disabled, size = "md", style, full }: ButtonProps) {
+export function Button({ children, onClick, variant = "primary", disabled, size = "md", style, full, title }: ButtonProps) {
   const [hover, setHover] = useState(false);
   const sizes: Record<string, CSSProperties> = {
     md:   { padding: "0 18px", height: 46, fontSize: 15, borderRadius: 11 },
@@ -51,6 +52,7 @@ export function Button({ children, onClick, variant = "primary", disabled, size 
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       disabled={disabled}
+      title={title}
       style={{
         display: "inline-flex", alignItems: "center", justifyContent: "center",
         gap: 8, fontFamily: "inherit", fontWeight: 600, cursor: disabled ? "not-allowed" : "pointer",

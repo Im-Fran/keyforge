@@ -17,7 +17,7 @@ interface HumanEntropyProps {
   accent: string;
 }
 
-export function HumanEntropy({ pool, onDone, done, bump, accent }: HumanEntropyProps) {
+export function HumanEntropy({ pool, onDone, bump, accent }: HumanEntropyProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
   const partsRef = useRef<Particle[]>([]);
