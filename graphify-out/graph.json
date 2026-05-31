@@ -1,0 +1,2988 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "keyforge_ui_assets",
+        "label": "Keyforge UI Visual Identity (favicon + hero + icon sprite)",
+        "nodes": [
+          "faviconsvg_logo",
+          "heropng_illustration",
+          "iconssvg_sprite"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "index.html"
+      },
+      {
+        "id": "indexhtml_font_stack",
+        "label": "HTML Font Stack (Plus Jakarta Sans + JetBrains Mono via Google Fonts)",
+        "nodes": [
+          "indexhtml_entrypoint",
+          "indexhtml_plusjakartasans",
+          "indexhtml_jetbrainsmono"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "index.html"
+      },
+      {
+        "id": "vite_react_plugin_choice",
+        "label": "Vite React Plugin Build Options (plugin-react vs plugin-react-swc)",
+        "nodes": [
+          "readme_reactvitetmpl",
+          "readme_pluginreact",
+          "readme_pluginreactswc"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "README.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "eslint.config.js",
+      "source_location": "L1",
+      "id": "eslint_config_js",
+      "community": 10,
+      "norm_label": "eslint.config.js"
+    },
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "vite.config.ts",
+      "source_location": "L1",
+      "id": "vite_config_ts",
+      "community": 11,
+      "norm_label": "vite.config.ts"
+    },
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L1",
+      "id": "src_app_tsx",
+      "community": 1,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "ACCENT_PRESETS",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L14",
+      "id": "src_app_accent_presets",
+      "community": 1,
+      "norm_label": "accent_presets"
+    },
+    {
+      "label": "AccentSwatches()",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L22",
+      "id": "src_app_accentswatches",
+      "community": 1,
+      "norm_label": "accentswatches()"
+    },
+    {
+      "label": "TWEAK_DEFAULTS",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L42",
+      "id": "src_app_tweak_defaults",
+      "community": 1,
+      "norm_label": "tweak_defaults"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L49",
+      "id": "src_app_app",
+      "community": 1,
+      "norm_label": "app()"
+    },
+    {
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "src/main.tsx",
+      "source_location": "L1",
+      "id": "src_main_tsx",
+      "community": 1,
+      "norm_label": "main.tsx"
+    },
+    {
+      "label": "Icon.tsx",
+      "file_type": "code",
+      "source_file": "src/components/Icon.tsx",
+      "source_location": "L1",
+      "id": "src_components_icon_tsx",
+      "community": 6,
+      "norm_label": "icon.tsx"
+    },
+    {
+      "label": "IconName",
+      "file_type": "code",
+      "source_file": "src/components/Icon.tsx",
+      "source_location": "L3",
+      "id": "components_icon_iconname",
+      "community": 6,
+      "norm_label": "iconname"
+    },
+    {
+      "label": "IconProps",
+      "file_type": "code",
+      "source_file": "src/components/Icon.tsx",
+      "source_location": "L9",
+      "id": "components_icon_iconprops",
+      "community": 6,
+      "norm_label": "iconprops"
+    },
+    {
+      "label": "Icon()",
+      "file_type": "code",
+      "source_file": "src/components/Icon.tsx",
+      "source_location": "L16",
+      "id": "components_icon_icon",
+      "community": 6,
+      "norm_label": "icon()"
+    },
+    {
+      "label": "TweaksPanel.tsx",
+      "file_type": "code",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L1",
+      "id": "src_components_tweakspanel_tsx",
+      "community": 1,
+      "norm_label": "tweakspanel.tsx"
+    },
+    {
+      "label": "TweakValues",
+      "file_type": "code",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L4",
+      "id": "components_tweakspanel_tweakvalues",
+      "community": 1,
+      "norm_label": "tweakvalues"
+    },
+    {
+      "label": "useTweaks()",
+      "file_type": "code",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L11",
+      "id": "components_tweakspanel_usetweaks",
+      "community": 1,
+      "norm_label": "usetweaks()"
+    },
+    {
+      "label": "TweaksPanelProps",
+      "file_type": "code",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L20",
+      "id": "components_tweakspanel_tweakspanelprops",
+      "community": 1,
+      "norm_label": "tweakspanelprops"
+    },
+    {
+      "label": "TweaksPanel()",
+      "file_type": "code",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L26",
+      "id": "components_tweakspanel_tweakspanel",
+      "community": 1,
+      "norm_label": "tweakspanel()"
+    },
+    {
+      "label": "TweakSection()",
+      "file_type": "code",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L94",
+      "id": "components_tweakspanel_tweaksection",
+      "community": 1,
+      "norm_label": "tweaksection()"
+    },
+    {
+      "label": "TweakRow()",
+      "file_type": "code",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L99",
+      "id": "components_tweakspanel_tweakrow",
+      "community": 1,
+      "norm_label": "tweakrow()"
+    },
+    {
+      "label": "TweakToggle()",
+      "file_type": "code",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L109",
+      "id": "components_tweakspanel_tweaktoggle",
+      "community": 1,
+      "norm_label": "tweaktoggle()"
+    },
+    {
+      "label": "SelectOption",
+      "file_type": "code",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L122",
+      "id": "components_tweakspanel_selectoption",
+      "community": 1,
+      "norm_label": "selectoption"
+    },
+    {
+      "label": "TweakSelect()",
+      "file_type": "code",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L123",
+      "id": "components_tweakspanel_tweakselect",
+      "community": 1,
+      "norm_label": "tweakselect()"
+    },
+    {
+      "label": "KeyResult.tsx",
+      "file_type": "code",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L1",
+      "id": "src_components_keyresult_tsx",
+      "community": 2,
+      "norm_label": "keyresult.tsx"
+    },
+    {
+      "label": "KeyResultProps",
+      "file_type": "code",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L6",
+      "id": "components_keyresult_keyresultprops",
+      "community": 2,
+      "norm_label": "keyresultprops"
+    },
+    {
+      "label": "KeyResult()",
+      "file_type": "code",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L12",
+      "id": "components_keyresult_keyresult",
+      "community": 2,
+      "norm_label": "keyresult()"
+    },
+    {
+      "label": "Header.tsx",
+      "file_type": "code",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L1",
+      "id": "src_components_header_tsx",
+      "community": 0,
+      "norm_label": "header.tsx"
+    },
+    {
+      "label": "SettingsPopover()",
+      "file_type": "code",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L7",
+      "id": "components_header_settingspopover",
+      "community": 0,
+      "norm_label": "settingspopover()"
+    },
+    {
+      "label": "HeaderProps",
+      "file_type": "code",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L84",
+      "id": "components_header_headerprops",
+      "community": 0,
+      "norm_label": "headerprops"
+    },
+    {
+      "label": "Header()",
+      "file_type": "code",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L92",
+      "id": "components_header_header",
+      "community": 0,
+      "norm_label": "header()"
+    },
+    {
+      "label": "HumanEntropy.tsx",
+      "file_type": "code",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L1",
+      "id": "src_components_humanentropy_tsx",
+      "community": 8,
+      "norm_label": "humanentropy.tsx"
+    },
+    {
+      "label": "Particle",
+      "file_type": "code",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L8",
+      "id": "components_humanentropy_particle",
+      "community": 8,
+      "norm_label": "particle"
+    },
+    {
+      "label": "HumanEntropyProps",
+      "file_type": "code",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L12",
+      "id": "components_humanentropy_humanentropyprops",
+      "community": 8,
+      "norm_label": "humanentropyprops"
+    },
+    {
+      "label": "HumanEntropy()",
+      "file_type": "code",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L20",
+      "id": "components_humanentropy_humanentropy",
+      "community": 8,
+      "norm_label": "humanentropy()"
+    },
+    {
+      "label": "Stepper.tsx",
+      "file_type": "code",
+      "source_file": "src/components/Stepper.tsx",
+      "source_location": "L1",
+      "id": "src_components_stepper_tsx",
+      "community": 6,
+      "norm_label": "stepper.tsx"
+    },
+    {
+      "label": "STEPS",
+      "file_type": "code",
+      "source_file": "src/components/Stepper.tsx",
+      "source_location": "L4",
+      "id": "components_stepper_steps",
+      "community": 6,
+      "norm_label": "steps"
+    },
+    {
+      "label": "StepperProps",
+      "file_type": "code",
+      "source_file": "src/components/Stepper.tsx",
+      "source_location": "L10",
+      "id": "components_stepper_stepperprops",
+      "community": 6,
+      "norm_label": "stepperprops"
+    },
+    {
+      "label": "Stepper()",
+      "file_type": "code",
+      "source_file": "src/components/Stepper.tsx",
+      "source_location": "L16",
+      "id": "components_stepper_stepper",
+      "community": 6,
+      "norm_label": "stepper()"
+    },
+    {
+      "label": "SystemEntropy.tsx",
+      "file_type": "code",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L1",
+      "id": "src_components_systementropy_tsx",
+      "community": 5,
+      "norm_label": "systementropy.tsx"
+    },
+    {
+      "label": "RowState",
+      "file_type": "code",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L6",
+      "id": "components_systementropy_rowstate",
+      "community": 5,
+      "norm_label": "rowstate"
+    },
+    {
+      "label": "hexDump()",
+      "file_type": "code",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L19",
+      "id": "components_systementropy_hexdump",
+      "community": 5,
+      "norm_label": "hexdump()"
+    },
+    {
+      "label": "InfoModal()",
+      "file_type": "code",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L38",
+      "id": "components_systementropy_infomodal",
+      "community": 5,
+      "norm_label": "infomodal()"
+    },
+    {
+      "label": "CameraPanel()",
+      "file_type": "code",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L98",
+      "id": "components_systementropy_camerapanel",
+      "community": 5,
+      "norm_label": "camerapanel()"
+    },
+    {
+      "label": "SystemEntropyProps",
+      "file_type": "code",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L154",
+      "id": "components_systementropy_systementropyprops",
+      "community": 5,
+      "norm_label": "systementropyprops"
+    },
+    {
+      "label": "SystemEntropy()",
+      "file_type": "code",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L161",
+      "id": "components_systementropy_systementropy",
+      "community": 5,
+      "norm_label": "systementropy()"
+    },
+    {
+      "label": "ui.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_tsx",
+      "community": 2,
+      "norm_label": "ui.tsx"
+    },
+    {
+      "label": "cardStyle",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L5",
+      "id": "components_ui_cardstyle",
+      "community": 2,
+      "norm_label": "cardstyle"
+    },
+    {
+      "label": "ButtonProps",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L13",
+      "id": "components_ui_buttonprops",
+      "community": 2,
+      "norm_label": "buttonprops"
+    },
+    {
+      "label": "Button()",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L24",
+      "id": "components_ui_button",
+      "community": 0,
+      "norm_label": "button()"
+    },
+    {
+      "label": "IconBtnProps",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L72",
+      "id": "components_ui_iconbtnprops",
+      "community": 2,
+      "norm_label": "iconbtnprops"
+    },
+    {
+      "label": "IconBtn()",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L79",
+      "id": "components_ui_iconbtn",
+      "community": 2,
+      "norm_label": "iconbtn()"
+    },
+    {
+      "label": "Spinner()",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L100",
+      "id": "components_ui_spinner",
+      "community": 2,
+      "norm_label": "spinner()"
+    },
+    {
+      "label": "Label()",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L110",
+      "id": "components_ui_label",
+      "community": 2,
+      "norm_label": "label()"
+    },
+    {
+      "label": "Chip()",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L122",
+      "id": "components_ui_chip",
+      "community": 2,
+      "norm_label": "chip()"
+    },
+    {
+      "label": "SegOption",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L144",
+      "id": "components_ui_segoption",
+      "community": 2,
+      "norm_label": "segoption"
+    },
+    {
+      "label": "Segmented()",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L146",
+      "id": "components_ui_segmented",
+      "community": 2,
+      "norm_label": "segmented()"
+    },
+    {
+      "label": "PoolBar()",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L171",
+      "id": "components_ui_poolbar",
+      "community": 8,
+      "norm_label": "poolbar()"
+    },
+    {
+      "label": "StepHeading()",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L190",
+      "id": "components_ui_stepheading",
+      "community": 8,
+      "norm_label": "stepheading()"
+    },
+    {
+      "label": "truncate()",
+      "file_type": "code",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L200",
+      "id": "components_ui_truncate",
+      "community": 2,
+      "norm_label": "truncate()"
+    },
+    {
+      "label": "crypto.ts",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L1",
+      "id": "src_lib_crypto_ts",
+      "community": 0,
+      "norm_label": "crypto.ts"
+    },
+    {
+      "label": "AlgoId",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L1",
+      "id": "lib_crypto_algoid",
+      "community": 0,
+      "norm_label": "algoid"
+    },
+    {
+      "label": "AlgoMeta",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L3",
+      "id": "lib_crypto_algometa",
+      "community": 0,
+      "norm_label": "algometa"
+    },
+    {
+      "label": "SourceResult",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L10",
+      "id": "lib_crypto_sourceresult",
+      "community": 0,
+      "norm_label": "sourceresult"
+    },
+    {
+      "label": "LocalSource",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L15",
+      "id": "lib_crypto_localsource",
+      "community": 0,
+      "norm_label": "localsource"
+    },
+    {
+      "label": "TokenType",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L22",
+      "id": "lib_crypto_tokentype",
+      "community": 0,
+      "norm_label": "tokentype"
+    },
+    {
+      "label": "numToBytes()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L32",
+      "id": "lib_crypto_numtobytes",
+      "community": 3,
+      "norm_label": "numtobytes()"
+    },
+    {
+      "label": "strToBytes()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L38",
+      "id": "lib_crypto_strtobytes",
+      "community": 3,
+      "norm_label": "strtobytes()"
+    },
+    {
+      "label": "concatBytes()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L42",
+      "id": "lib_crypto_concatbytes",
+      "community": 3,
+      "norm_label": "concatbytes()"
+    },
+    {
+      "label": "EntropyPool",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L51",
+      "id": "lib_crypto_entropypool",
+      "community": 3,
+      "norm_label": "entropypool"
+    },
+    {
+      "label": ".mixFp()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L56",
+      "id": "lib_crypto_entropypool_mixfp",
+      "community": 3,
+      "norm_label": ".mixfp()"
+    },
+    {
+      "label": ".add()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L61",
+      "id": "lib_crypto_entropypool_add",
+      "community": 3,
+      "norm_label": ".add()"
+    },
+    {
+      "label": ".addNumber()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L69",
+      "id": "lib_crypto_entropypool_addnumber",
+      "community": 3,
+      "norm_label": ".addnumber()"
+    },
+    {
+      "label": ".addString()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L70",
+      "id": "lib_crypto_entropypool_addstring",
+      "community": 3,
+      "norm_label": ".addstring()"
+    },
+    {
+      "label": ".fingerprint()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L72",
+      "id": "lib_crypto_entropypool_fingerprint",
+      "community": 3,
+      "norm_label": ".fingerprint()"
+    },
+    {
+      "label": ".snapshotBytes()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L76",
+      "id": "lib_crypto_entropypool_snapshotbytes",
+      "community": 3,
+      "norm_label": ".snapshotbytes()"
+    },
+    {
+      "label": ".digest()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L81",
+      "id": "lib_crypto_entropypool_digest",
+      "community": 3,
+      "norm_label": ".digest()"
+    },
+    {
+      "label": "localSources()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L118",
+      "id": "lib_crypto_localsources",
+      "community": 5,
+      "norm_label": "localsources()"
+    },
+    {
+      "label": "toHex()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L194",
+      "id": "lib_crypto_tohex",
+      "community": 0,
+      "norm_label": "tohex()"
+    },
+    {
+      "label": "toBase64Url()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L200",
+      "id": "lib_crypto_tobase64url",
+      "community": 0,
+      "norm_label": "tobase64url()"
+    },
+    {
+      "label": "toCharset()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L212",
+      "id": "lib_crypto_tocharset",
+      "community": 0,
+      "norm_label": "tocharset()"
+    },
+    {
+      "label": "toUuidV4()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L218",
+      "id": "lib_crypto_touuidv4",
+      "community": 0,
+      "norm_label": "touuidv4()"
+    },
+    {
+      "label": "toPin()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L226",
+      "id": "lib_crypto_topin",
+      "community": 0,
+      "norm_label": "topin()"
+    },
+    {
+      "label": "TOKEN_TYPES",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L232",
+      "id": "lib_crypto_token_types",
+      "community": 2,
+      "norm_label": "token_types"
+    },
+    {
+      "label": "entropyBits()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L272",
+      "id": "lib_crypto_entropybits",
+      "community": 2,
+      "norm_label": "entropybits()"
+    },
+    {
+      "label": "ALGOS",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L278",
+      "id": "lib_crypto_algos",
+      "community": 0,
+      "norm_label": "algos"
+    },
+    {
+      "label": "bytesFromDrawable()",
+      "file_type": "code",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L284",
+      "id": "lib_crypto_bytesfromdrawable",
+      "community": 5,
+      "norm_label": "bytesfromdrawable()"
+    },
+    {
+      "label": "index.html \u2014 App Entry Point",
+      "file_type": "code",
+      "source_file": "index.html",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "indexhtml_entrypoint",
+      "community": 4,
+      "norm_label": "index.html \u2014 app entry point"
+    },
+    {
+      "label": "React Root Mount Point (#root)",
+      "file_type": "code",
+      "source_file": "index.html",
+      "source_location": "14",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "indexhtml_rootdiv",
+      "community": 4,
+      "norm_label": "react root mount point (#root)"
+    },
+    {
+      "label": "src/main.tsx \u2014 Main Script Module",
+      "file_type": "code",
+      "source_file": "index.html",
+      "source_location": "15",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "indexhtml_maintsx",
+      "community": 4,
+      "norm_label": "src/main.tsx \u2014 main script module"
+    },
+    {
+      "label": "favicon.svg \u2014 App Favicon",
+      "file_type": "image",
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "indexhtml_faviconsvg",
+      "community": 4,
+      "norm_label": "favicon.svg \u2014 app favicon"
+    },
+    {
+      "label": "Plus Jakarta Sans \u2014 UI Font",
+      "file_type": "rationale",
+      "source_file": "index.html",
+      "source_location": "10",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "indexhtml_plusjakartasans",
+      "community": 4,
+      "norm_label": "plus jakarta sans \u2014 ui font"
+    },
+    {
+      "label": "JetBrains Mono \u2014 Monospace Font (token display)",
+      "file_type": "rationale",
+      "source_file": "index.html",
+      "source_location": "10",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "indexhtml_jetbrainsmono",
+      "community": 4,
+      "norm_label": "jetbrains mono \u2014 monospace font (token display)"
+    },
+    {
+      "label": "bg-grid CSS Background Layer",
+      "file_type": "code",
+      "source_file": "index.html",
+      "source_location": "13",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "indexhtml_bggrid",
+      "community": 4,
+      "norm_label": "bg-grid css background layer"
+    },
+    {
+      "label": "React + TypeScript + Vite Template",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_reactvitetmpl",
+      "community": 9,
+      "norm_label": "react + typescript + vite template"
+    },
+    {
+      "label": "React Compiler (enabled)",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "source_location": "10",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "React Compiler is enabled on this template to enable automatic memoization/optimization, though it impacts Vite dev & build performance.",
+      "id": "readme_reactcompiler",
+      "community": 9,
+      "norm_label": "react compiler (enabled)"
+    },
+    {
+      "label": "Type-Aware ESLint Configuration",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "source_location": "17",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_eslinttyped",
+      "community": 9,
+      "norm_label": "type-aware eslint configuration"
+    },
+    {
+      "label": "@vitejs/plugin-react (Oxc)",
+      "file_type": "code",
+      "source_file": "README.md",
+      "source_location": "5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_pluginreact",
+      "community": 9,
+      "norm_label": "@vitejs/plugin-react (oxc)"
+    },
+    {
+      "label": "@vitejs/plugin-react-swc (SWC)",
+      "file_type": "code",
+      "source_file": "README.md",
+      "source_location": "6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_pluginreactswc",
+      "community": 9,
+      "norm_label": "@vitejs/plugin-react-swc (swc)"
+    },
+    {
+      "label": "icons.svg \u2014 SVG Icon Sprite Sheet",
+      "file_type": "image",
+      "source_file": "public/icons.svg",
+      "source_location": "1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "iconssvg_sprite",
+      "community": 7,
+      "norm_label": "icons.svg \u2014 svg icon sprite sheet"
+    },
+    {
+      "label": "Bluesky Social Icon",
+      "file_type": "image",
+      "source_file": "public/icons.svg",
+      "source_location": "2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "iconssvg_bluesky",
+      "community": 7,
+      "norm_label": "bluesky social icon"
+    },
+    {
+      "label": "Discord Social Icon",
+      "file_type": "image",
+      "source_file": "public/icons.svg",
+      "source_location": "6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "iconssvg_discord",
+      "community": 7,
+      "norm_label": "discord social icon"
+    },
+    {
+      "label": "Documentation Icon (purple stroke)",
+      "file_type": "image",
+      "source_file": "public/icons.svg",
+      "source_location": "9",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "iconssvg_documentation",
+      "community": 7,
+      "norm_label": "documentation icon (purple stroke)"
+    },
+    {
+      "label": "GitHub Icon",
+      "file_type": "image",
+      "source_file": "public/icons.svg",
+      "source_location": "14",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "iconssvg_github",
+      "community": 7,
+      "norm_label": "github icon"
+    },
+    {
+      "label": "Social/User Icon (purple stroke)",
+      "file_type": "image",
+      "source_file": "public/icons.svg",
+      "source_location": "17",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "iconssvg_social",
+      "community": 7,
+      "norm_label": "social/user icon (purple stroke)"
+    },
+    {
+      "label": "X (Twitter) Icon",
+      "file_type": "image",
+      "source_file": "public/icons.svg",
+      "source_location": "21",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "iconssvg_x",
+      "community": 7,
+      "norm_label": "x (twitter) icon"
+    },
+    {
+      "label": "Keyforge Logo SVG \u2014 Lightning Bolt / Layered Shape",
+      "file_type": "image",
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "faviconsvg_logo",
+      "community": 4,
+      "norm_label": "keyforge logo svg \u2014 lightning bolt / layered shape"
+    },
+    {
+      "label": "Hero Illustration \u2014 Isometric Layered Floating Tiles",
+      "file_type": "image",
+      "source_file": "src/assets/hero.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "heropng_illustration",
+      "community": 4,
+      "norm_label": "hero illustration \u2014 isometric layered floating tiles"
+    },
+    {
+      "label": "Keyforge \u2014 Secret Token Generator App",
+      "file_type": "rationale",
+      "source_file": "index.html",
+      "source_location": "7",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Keyforge is a secret token generator app with real entropy (system + human). Built as a 3-step wizard UI using Vite+React+Tailwind+TypeScript, deployed on Cloudflare Workers.",
+      "id": "keyforge_app",
+      "community": 4,
+      "norm_label": "keyforge \u2014 secret token generator app"
+    }
+  ],
+  "links": [
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_components_header_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "components_header_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_components_stepper_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "components_stepper_stepper",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_components_systementropy_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "components_systementropy_systementropy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_components_humanentropy_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "components_humanentropy_humanentropy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_components_keyresult_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "components_keyresult_keyresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_components_tweakspanel_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "components_tweakspanel_tweakspanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "components_tweakspanel_tweaksection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "components_tweakspanel_tweakrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "components_tweakspanel_tweaktoggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "components_tweakspanel_tweakselect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "components_tweakspanel_usetweaks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_components_icon_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "components_icon_icon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_lib_crypto_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "lib_crypto_entropypool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "lib_crypto_algos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "lib_crypto_algoid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_accent_presets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_accentswatches",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_tweak_defaults",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_main_tsx",
+      "target": "src_app_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.tsx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "components_tweakspanel_usetweaks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Icon.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_icon_tsx",
+      "target": "components_icon_iconname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Icon.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_components_icon_tsx",
+      "target": "components_icon_iconprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Icon.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_components_icon_tsx",
+      "target": "components_icon_icon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "src_components_icon_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_header_tsx",
+      "target": "src_components_icon_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_humanentropy_tsx",
+      "target": "src_components_icon_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Stepper.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_stepper_tsx",
+      "target": "src_components_icon_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "src_components_icon_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "src_components_icon_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Stepper.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_stepper_tsx",
+      "target": "components_icon_iconname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_icon_iconname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "components_icon_icon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_header_tsx",
+      "target": "components_icon_icon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_humanentropy_tsx",
+      "target": "components_icon_icon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Stepper.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_stepper_tsx",
+      "target": "components_icon_icon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_icon_icon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_icon_icon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_tweakspanel_tsx",
+      "target": "components_tweakspanel_tweakvalues",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_components_tweakspanel_tsx",
+      "target": "components_tweakspanel_usetweaks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_components_tweakspanel_tsx",
+      "target": "components_tweakspanel_tweakspanelprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_components_tweakspanel_tsx",
+      "target": "components_tweakspanel_tweakspanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "src_components_tweakspanel_tsx",
+      "target": "components_tweakspanel_tweaksection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "src_components_tweakspanel_tsx",
+      "target": "components_tweakspanel_tweakrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "src_components_tweakspanel_tsx",
+      "target": "components_tweakspanel_tweaktoggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "src_components_tweakspanel_tsx",
+      "target": "components_tweakspanel_selectoption",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TweaksPanel.tsx",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "src_components_tweakspanel_tsx",
+      "target": "components_tweakspanel_tweakselect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "src_components_ui_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "components_ui_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "components_ui_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "components_ui_chip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "components_ui_segmented",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "components_ui_stepheading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "src_lib_crypto_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "lib_crypto_token_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "lib_crypto_entropybits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "lib_crypto_entropypool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "lib_crypto_algoid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "components_keyresult_keyresultprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_components_keyresult_tsx",
+      "target": "components_keyresult_keyresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/KeyResult.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "components_keyresult_keyresult",
+      "target": "lib_crypto_entropybits"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_header_tsx",
+      "target": "src_components_ui_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_header_tsx",
+      "target": "components_ui_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_header_tsx",
+      "target": "src_lib_crypto_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_header_tsx",
+      "target": "lib_crypto_algos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_header_tsx",
+      "target": "lib_crypto_algoid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_header_tsx",
+      "target": "components_header_settingspopover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "src_components_header_tsx",
+      "target": "components_header_headerprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.tsx",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "src_components_header_tsx",
+      "target": "components_header_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_humanentropy_tsx",
+      "target": "src_components_ui_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_humanentropy_tsx",
+      "target": "components_ui_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_humanentropy_tsx",
+      "target": "components_ui_poolbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_humanentropy_tsx",
+      "target": "components_ui_stepheading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_humanentropy_tsx",
+      "target": "src_lib_crypto_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_humanentropy_tsx",
+      "target": "lib_crypto_entropypool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_components_humanentropy_tsx",
+      "target": "components_humanentropy_particle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_components_humanentropy_tsx",
+      "target": "components_humanentropy_humanentropyprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HumanEntropy.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_components_humanentropy_tsx",
+      "target": "components_humanentropy_humanentropy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Stepper.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_stepper_tsx",
+      "target": "components_stepper_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Stepper.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_components_stepper_tsx",
+      "target": "components_stepper_stepperprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Stepper.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_components_stepper_tsx",
+      "target": "components_stepper_stepper",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "src_components_ui_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_ui_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_ui_iconbtn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_ui_spinner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_ui_poolbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_ui_stepheading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_ui_truncate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "src_lib_crypto_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "lib_crypto_localsources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "lib_crypto_bytesfromdrawable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "lib_crypto_entropypool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_systementropy_rowstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_systementropy_hexdump",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_systementropy_infomodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_systementropy_camerapanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_systementropy_systementropyprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "src_components_systementropy_tsx",
+      "target": "components_systementropy_systementropy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SystemEntropy.tsx",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "components_systementropy_infomodal",
+      "target": "components_systementropy_hexdump",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_cardstyle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_buttonprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_iconbtnprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_iconbtn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_spinner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_chip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_segoption",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_segmented",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_poolbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_stepheading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui.tsx",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "src_components_ui_tsx",
+      "target": "components_ui_truncate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_algoid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_algometa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_sourceresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_localsource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_tokentype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_numtobytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_strtobytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_concatbytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_entropypool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_localsources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_tohex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_tobase64url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_tocharset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L218",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_touuidv4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L226",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_topin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L232",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_token_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L272",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_entropybits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L278",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_algos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L284",
+      "weight": 1.0,
+      "source": "src_lib_crypto_ts",
+      "target": "lib_crypto_bytesfromdrawable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool_addnumber",
+      "target": "lib_crypto_numtobytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool_addstring",
+      "target": "lib_crypto_strtobytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool_snapshotbytes",
+      "target": "lib_crypto_concatbytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool_digest",
+      "target": "lib_crypto_concatbytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool",
+      "target": "lib_crypto_entropypool_mixfp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool",
+      "target": "lib_crypto_entropypool_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool",
+      "target": "lib_crypto_entropypool_addnumber",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool",
+      "target": "lib_crypto_entropypool_addstring",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool",
+      "target": "lib_crypto_entropypool_fingerprint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool",
+      "target": "lib_crypto_entropypool_snapshotbytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool",
+      "target": "lib_crypto_entropypool_digest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool_add",
+      "target": "lib_crypto_entropypool_mixfp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool_addnumber",
+      "target": "lib_crypto_entropypool_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "lib_crypto_entropypool_addstring",
+      "target": "lib_crypto_entropypool_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/crypto.ts",
+      "source_location": "L222",
+      "weight": 1.0,
+      "source": "lib_crypto_touuidv4",
+      "target": "lib_crypto_tohex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": "14",
+      "weight": 1.0,
+      "source": "indexhtml_entrypoint",
+      "target": "indexhtml_rootdiv"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": "15",
+      "weight": 1.0,
+      "source": "indexhtml_entrypoint",
+      "target": "indexhtml_maintsx"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": "5",
+      "weight": 1.0,
+      "source": "indexhtml_entrypoint",
+      "target": "indexhtml_faviconsvg"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": "10",
+      "weight": 1.0,
+      "source": "indexhtml_entrypoint",
+      "target": "indexhtml_plusjakartasans"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": "10",
+      "weight": 1.0,
+      "source": "indexhtml_entrypoint",
+      "target": "indexhtml_jetbrainsmono"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": "13",
+      "weight": 1.0,
+      "source": "indexhtml_entrypoint",
+      "target": "indexhtml_bggrid"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "index.html",
+      "source_location": "7",
+      "weight": 1.0,
+      "source": "indexhtml_entrypoint",
+      "target": "keyforge_app"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "indexhtml_faviconsvg",
+      "target": "faviconsvg_logo"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "index.html",
+      "source_location": "10",
+      "weight": 0.8,
+      "source": "indexhtml_jetbrainsmono",
+      "target": "keyforge_app"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "10",
+      "weight": 1.0,
+      "source": "readme_reactvitetmpl",
+      "target": "readme_reactcompiler"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "17",
+      "weight": 1.0,
+      "source": "readme_reactvitetmpl",
+      "target": "readme_eslinttyped"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "5",
+      "weight": 1.0,
+      "source": "readme_reactvitetmpl",
+      "target": "readme_pluginreact"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "6",
+      "weight": 1.0,
+      "source": "readme_reactvitetmpl",
+      "target": "readme_pluginreactswc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/icons.svg",
+      "source_location": "2",
+      "weight": 1.0,
+      "source": "iconssvg_sprite",
+      "target": "iconssvg_bluesky"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/icons.svg",
+      "source_location": "6",
+      "weight": 1.0,
+      "source": "iconssvg_sprite",
+      "target": "iconssvg_discord"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/icons.svg",
+      "source_location": "9",
+      "weight": 1.0,
+      "source": "iconssvg_sprite",
+      "target": "iconssvg_documentation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/icons.svg",
+      "source_location": "14",
+      "weight": 1.0,
+      "source": "iconssvg_sprite",
+      "target": "iconssvg_github"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/icons.svg",
+      "source_location": "17",
+      "weight": 1.0,
+      "source": "iconssvg_sprite",
+      "target": "iconssvg_social"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/icons.svg",
+      "source_location": "21",
+      "weight": 1.0,
+      "source": "iconssvg_sprite",
+      "target": "iconssvg_x"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.55,
+      "source_file": "public/icons.svg",
+      "source_location": null,
+      "weight": 0.5,
+      "source": "iconssvg_documentation",
+      "target": "iconssvg_social"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/favicon.svg",
+      "source_location": null,
+      "weight": 0.8,
+      "source": "faviconsvg_logo",
+      "target": "keyforge_app"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/assets/hero.png",
+      "source_location": null,
+      "weight": 0.8,
+      "source": "heropng_illustration",
+      "target": "keyforge_app"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "keyforge_ui_assets",
+      "label": "Keyforge UI Visual Identity (favicon + hero + icon sprite)",
+      "nodes": [
+        "faviconsvg_logo",
+        "heropng_illustration",
+        "iconssvg_sprite"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "index.html"
+    },
+    {
+      "id": "indexhtml_font_stack",
+      "label": "HTML Font Stack (Plus Jakarta Sans + JetBrains Mono via Google Fonts)",
+      "nodes": [
+        "indexhtml_entrypoint",
+        "indexhtml_plusjakartasans",
+        "indexhtml_jetbrainsmono"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html"
+    },
+    {
+      "id": "vite_react_plugin_choice",
+      "label": "Vite React Plugin Build Options (plugin-react vs plugin-react-swc)",
+      "nodes": [
+        "readme_reactvitetmpl",
+        "readme_pluginreact",
+        "readme_pluginreactswc"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md"
+    }
+  ],
+  "built_at_commit": "835618bcd789445449fb7654d71c00a257f9ec67"
+}

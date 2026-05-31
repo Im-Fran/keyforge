@@ -1,0 +1,82 @@
+{
+  "/Users/fran/Development/Im-Fran/keyforge/eslint.config.js": {
+    "mtime": 1780200950.6000662,
+    "hash": "0355276bc79439afe3c53e3a2470ca1e"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/vite.config.ts": {
+    "mtime": 1780204216.6273453,
+    "hash": "278daaf07f2990d5b8bc4ce801fb40ef"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/App.tsx": {
+    "mtime": 1780201888.0405076,
+    "hash": "812aae2445ffd710665ca1350270cf29"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/main.tsx": {
+    "mtime": 1780200950.6096504,
+    "hash": "787e5a07efeb2bf6209d5937195f2f68"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/components/Icon.tsx": {
+    "mtime": 1780201658.8630743,
+    "hash": "1e642818fb7ad6f521c115ff5e7e9f9f"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/components/TweaksPanel.tsx": {
+    "mtime": 1780201588.6616888,
+    "hash": "007351e2adc31ef6e51f951faae72a69"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/components/KeyResult.tsx": {
+    "mtime": 1780201817.5114787,
+    "hash": "b918bc3a86c8bf42372e2781f975055d"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/components/Header.tsx": {
+    "mtime": 1780201664.3846223,
+    "hash": "b13682695df4fe1095adfe7c76fba23b"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/components/HumanEntropy.tsx": {
+    "mtime": 1780203895.8195744,
+    "hash": "e725066c2a1bad6e9a7621a13742e64e"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/components/Stepper.tsx": {
+    "mtime": 1780201681.6729028,
+    "hash": "b5fb3fa5676a74743bdabf5a590f7893"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/components/SystemEntropy.tsx": {
+    "mtime": 1780201750.8805652,
+    "hash": "eff4212a191ae21745edd02daa02d82c"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/components/ui.tsx": {
+    "mtime": 1780203902.313542,
+    "hash": "83361e1b2160aebc253b7e93e477118d"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/lib/crypto.ts": {
+    "mtime": 1780203895.832318,
+    "hash": "8c3da212528cb0f92e3f659a134319e6"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/index.html": {
+    "mtime": 1780201897.3365643,
+    "hash": "9d7c332f42fb3bec46a5bf198ebbe943"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/README.md": {
+    "mtime": 1780200950.613461,
+    "hash": "987442a8c620e4b9d478748fe65a6a46"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/public/icons.svg": {
+    "mtime": 1780200950.6039214,
+    "hash": "3b4fcfcf393eca4d264dca4a4663bc37"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/public/favicon.svg": {
+    "mtime": 1780200950.602891,
+    "hash": "7e840862161341271697daa99a40d76b"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/assets/hero.png": {
+    "mtime": 1780200950.6070242,
+    "hash": "aead493361b27e7510691c5d7072dfc1"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/assets/vite.svg": {
+    "mtime": 1780200950.6084034,
+    "hash": "9960a24288958394ac50e57ff638b036"
+  },
+  "/Users/fran/Development/Im-Fran/keyforge/src/assets/react.svg": {
+    "mtime": 1780200950.6078246,
+    "hash": "f0402b67b6ce880f65666bb49e841696"
+  }
+}
