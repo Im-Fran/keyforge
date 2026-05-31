@@ -1,14 +1,6 @@
 import { useState, type CSSProperties, type ReactNode } from "react";
 import { Icon, type IconName } from "./Icon";
 
-// ---- Card style shared -------------------------------------------------------
-export const cardStyle: CSSProperties = {
-  background: "var(--surface)",
-  border: "1px solid var(--border)",
-  borderRadius: "var(--radius)",
-  boxShadow: "0 1px 2px hsl(var(--shadow-c) / .05), 0 18px 40px -24px hsl(var(--shadow-c) / .28)",
-};
-
 // ---- Button ------------------------------------------------------------------
 interface ButtonProps {
   children: ReactNode;
@@ -196,7 +188,3 @@ export function StepHeading({ title, sub }: { title: string; sub: string }) {
   );
 }
 
-// ---- truncate ----------------------------------------------------------------
-export function truncate(s: string, n: number): string {
-  return s.length > n ? s.slice(0, n - 1) + "…" : s;
-}

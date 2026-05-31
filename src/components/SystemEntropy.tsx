@@ -1,7 +1,8 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 import { Icon } from "./Icon";
-import { Button, IconBtn, Spinner, PoolBar, StepHeading, truncate } from "./ui";
+import { Button, IconBtn, Spinner, PoolBar, StepHeading } from "./ui";
 import { localSources, bytesFromDrawable, type EntropyPool } from "../lib/crypto";
+import { truncate } from "../lib/utils";
 
 interface RowState {
   id: string;

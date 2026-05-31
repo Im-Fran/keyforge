@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { Header } from "./components/Header";
 import { Stepper } from "./components/Stepper";
 import { SystemEntropy } from "./components/SystemEntropy";
@@ -6,8 +6,8 @@ import { HumanEntropy } from "./components/HumanEntropy";
 import { KeyResult } from "./components/KeyResult";
 import {
   TweaksPanel, TweakSection, TweakRow, TweakToggle, TweakSelect,
-  useTweaks,
 } from "./components/TweaksPanel";
+import { useTweaks } from "./hooks/useTweaks";
 import { Icon } from "./components/Icon";
 import { EntropyPool, ALGOS, type AlgoId } from "./lib/crypto";
 
@@ -47,7 +47,7 @@ const TWEAK_DEFAULTS = {
 };
 
 export default function App() {
-  const poolRef = useRef(new EntropyPool());
+  const [pool, setPool] = useState(() => new EntropyPool());
   const [step, setStepRaw] = useState(1);
   const [maxStep, setMaxStep] = useState(1);
   const goStep = useCallback((n: number) => {
@@ -70,7 +70,7 @@ export default function App() {
   }, [theme, accent]);
 
   const restart = () => {
-    poolRef.current = new EntropyPool();
+    setPool(new EntropyPool());
     setSysDone(false); setHumanDone(false); setStepRaw(1); setMaxStep(1); bump();
   };
 
@@ -102,7 +102,7 @@ export default function App() {
           {/* Pasos 1 y 2 siempre montados para conservar estado */}
           <div style={{ display: step === 1 ? "block" : "none" }}>
             <SystemEntropy
-              pool={poolRef.current}
+              pool={pool}
               done={sysDone}
               bump={bump}
               onDone={(advance) => {
@@ -113,7 +113,7 @@ export default function App() {
           </div>
           <div style={{ display: step === 2 ? "block" : "none" }}>
             <HumanEntropy
-              pool={poolRef.current}
+              pool={pool}
               done={humanDone}
               bump={bump}
               accent={accent}
@@ -126,7 +126,7 @@ export default function App() {
           {step === 3 && (
             <KeyResult
               key={t.defaultType}
-              pool={poolRef.current}
+              pool={pool}
               defaultType={t.defaultType}
               algo={t.hashAlgo as AlgoId}
             />
