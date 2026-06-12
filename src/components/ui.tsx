@@ -1,4 +1,5 @@
 import { useState, type CSSProperties, type ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 import { Icon, type IconName } from "./Icon";
 
 // ---- Button ------------------------------------------------------------------
@@ -161,16 +162,17 @@ export function Segmented({ options, value, onChange }: { options: SegOption[]; 
 
 // ---- PoolBar -----------------------------------------------------------------
 export function PoolBar({ byteCount, fingerprint }: { byteCount: number; fingerprint: string }) {
+  const { t } = useTranslation();
   return (
     <div style={{
       display: "flex", alignItems: "center", gap: 12, marginTop: 16, padding: "11px 14px",
       borderRadius: 11, background: "var(--surface-2)", border: "1px dashed var(--border)",
     }}>
       <Icon name="bolt" size={14} />
-      <span style={{ fontSize: 12.5, color: "var(--text-2)", fontWeight: 600 }}>Pool de entropía</span>
-      <span className="mono" style={{ fontSize: 12.5, color: "var(--text-3)" }}>{byteCount} bytes</span>
+      <span style={{ fontSize: 12.5, color: "var(--text-2)", fontWeight: 600 }}>{t("poolBar.label")}</span>
+      <span className="mono" style={{ fontSize: 12.5, color: "var(--text-3)" }}>{byteCount} {t("poolBar.bytes")}</span>
       <div style={{ flex: 1 }} />
-      <span style={{ fontSize: 11, color: "var(--text-3)", fontWeight: 600 }}>huella</span>
+      <span style={{ fontSize: 11, color: "var(--text-3)", fontWeight: 600 }}>{t("poolBar.fingerprint")}</span>
       <span className="mono" style={{ fontSize: 13, fontWeight: 700, color: "var(--accent)", letterSpacing: ".05em" }}>
         {fingerprint}
       </span>
@@ -187,4 +189,3 @@ export function StepHeading({ title, sub }: { title: string; sub: string }) {
     </div>
   );
 }
-
