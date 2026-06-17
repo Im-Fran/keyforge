@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect, useCallback } from "react";
+import { useTranslation } from "react-i18next";
 import { Icon } from "./Icon";
 import { Button, PoolBar, StepHeading } from "./ui";
 import type { EntropyPool } from "../lib/crypto";
@@ -18,6 +19,7 @@ interface HumanEntropyProps {
 }
 
 export function HumanEntropy({ pool, onDone, bump, accent }: HumanEntropyProps) {
+  const { t } = useTranslation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
   const partsRef = useRef<Particle[]>([]);
@@ -104,8 +106,8 @@ export function HumanEntropy({ pool, onDone, bump, accent }: HumanEntropyProps) 
   return (
     <div>
       <StepHeading
-        title="Añade tu propio azar"
-        sub="Mueve el cursor dentro del recuadro de forma errática. Cada micro-movimiento, su velocidad y su tiempo exacto son impredecibles incluso para ti — los mezclamos con la entropía del sistema."
+        title={t("humanEntropy.title")}
+        sub={t("humanEntropy.sub")}
       />
 
       <div
@@ -113,7 +115,7 @@ export function HumanEntropy({ pool, onDone, bump, accent }: HumanEntropyProps) 
         onMouseEnter={() => setActive(true)}
         onMouseLeave={() => { setActive(false); lastRef.current = null; }}
         onMouseMove={(e) => sample(e.clientX, e.clientY, e)}
-        onTouchMove={(e) => { const t = e.touches[0]; if (t) sample(t.clientX, t.clientY, e); }}
+        onTouchMove={(e) => { const touch = e.touches[0]; if (touch) sample(touch.clientX, touch.clientY, e); }}
         style={{
           position: "relative", height: 268, marginTop: 18, borderRadius: 14, overflow: "hidden",
           cursor: full ? "default" : "crosshair",
@@ -136,8 +138,8 @@ export function HumanEntropy({ pool, onDone, bump, accent }: HumanEntropyProps) 
             }}>
               <Icon name="cursor" size={22} />
             </div>
-            <div style={{ fontWeight: 600, color: "var(--text-2)" }}>Mueve el mouse aquí dentro</div>
-            <div style={{ fontSize: 12.5, color: "var(--text-3)", marginTop: 3 }}>cuanto más errático, mejor</div>
+            <div style={{ fontWeight: 600, color: "var(--text-2)" }}>{t("humanEntropy.moveHere")}</div>
+            <div style={{ fontSize: 12.5, color: "var(--text-3)", marginTop: 3 }}>{t("humanEntropy.erratic")}</div>
           </div>
         </div>
         {full && (
@@ -147,7 +149,7 @@ export function HumanEntropy({ pool, onDone, bump, accent }: HumanEntropyProps) 
               background: "var(--good-soft)", color: "var(--good)", fontWeight: 700, fontSize: 14,
               border: "1px solid var(--good)",
             }}>
-              <Icon name="check" size={17} /> Entropía suficiente
+              <Icon name="check" size={17} /> {t("humanEntropy.sufficient")}
             </div>
           </div>
         )}
@@ -155,7 +157,7 @@ export function HumanEntropy({ pool, onDone, bump, accent }: HumanEntropyProps) 
 
       <div style={{ marginTop: 16 }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 7 }}>
-          <span style={{ fontSize: 12.5, fontWeight: 600, color: "var(--text-2)" }}>Recolección de entropía humana</span>
+          <span style={{ fontSize: 12.5, fontWeight: 600, color: "var(--text-2)" }}>{t("humanEntropy.collecting")}</span>
           <span className="mono" style={{ fontSize: 13, fontWeight: 700, color: full ? "var(--good)" : "var(--accent)" }}>{pct}%</span>
         </div>
         <div style={{ height: 9, borderRadius: 999, background: "var(--surface-2)", border: "1px solid var(--border)", overflow: "hidden" }}>
@@ -171,7 +173,7 @@ export function HumanEntropy({ pool, onDone, bump, accent }: HumanEntropyProps) 
 
       <div style={{ marginTop: 20, display: "flex", justifyContent: "flex-end" }}>
         <Button onClick={() => onDone(true)} disabled={!full}>
-          {full ? <><span>Generar llave</span> <Icon name="arrow" size={16} /></> : `Sigue moviendo… ${pct}%`}
+          {full ? <><span>{t("humanEntropy.generateBtn")}</span> <Icon name="arrow" size={16} /></> : t("humanEntropy.keepMoving", { pct })}
         </Button>
       </div>
     </div>

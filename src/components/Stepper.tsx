@@ -1,10 +1,11 @@
 import { Fragment } from "react";
+import { useTranslation } from "react-i18next";
 import { Icon, type IconName } from "./Icon";
 
-const STEPS: { n: number; label: string; icon: IconName }[] = [
-  { n: 1, label: "Entropía del sistema", icon: "cpu" },
-  { n: 2, label: "Entropía humana", icon: "cursor" },
-  { n: 3, label: "Tu llave", icon: "key" },
+const STEPS: { n: number; key: "system" | "human" | "result"; icon: IconName }[] = [
+  { n: 1, key: "system", icon: "cpu" },
+  { n: 2, key: "human", icon: "cursor" },
+  { n: 3, key: "result", icon: "key" },
 ];
 
 interface StepperProps {
@@ -14,6 +15,7 @@ interface StepperProps {
 }
 
 export function Stepper({ step, maxStep, onJump }: StepperProps) {
+  const { t } = useTranslation();
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 0, marginBottom: 22 }}>
       {STEPS.map((s, i) => {
@@ -24,7 +26,7 @@ export function Stepper({ step, maxStep, onJump }: StepperProps) {
             <button
               onClick={() => reachable && s.n !== step && onJump(s.n)}
               disabled={!reachable}
-              title={reachable ? (s.n === step ? "" : `Ir al paso ${s.n}`) : "Aún no disponible"}
+              title={reachable ? (s.n === step ? "" : t("stepper.goTo", { n: s.n })) : t("stepper.unavailable")}
               style={{
                 display: "flex", alignItems: "center", gap: 11, flex: "none",
                 padding: "4px 6px", margin: "-4px -2px", borderRadius: 10,
@@ -52,13 +54,13 @@ export function Stepper({ step, maxStep, onJump }: StepperProps) {
                   fontSize: 10.5, fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase",
                   color: active || done ? "var(--accent)" : "var(--text-3)",
                 }}>
-                  Paso {s.n}
+                  {t("stepper.stepLabel", { n: s.n })}
                 </div>
                 <div style={{
                   fontSize: 13.5, fontWeight: 600, whiteSpace: "nowrap",
                   color: active || done ? "var(--text)" : "var(--text-3)",
                 }}>
-                  {s.label}
+                  {t(`stepper.steps.${s.key}`)}
                 </div>
               </div>
             </button>

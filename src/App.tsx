@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Header } from "./components/Header";
 import { Stepper } from "./components/Stepper";
 import { SystemEntropy } from "./components/SystemEntropy";
@@ -12,20 +13,21 @@ import { Icon } from "./components/Icon";
 import { EntropyPool, ALGOS, type AlgoId } from "./lib/crypto";
 
 const ACCENT_PRESETS = [
-  { hue: 280, name: "Índigo" },
-  { hue: 255, name: "Azul" },
-  { hue: 195, name: "Cian" },
-  { hue: 155, name: "Verde" },
-  { hue: 320, name: "Magenta" },
+  { hue: 280, key: "indigo" },
+  { hue: 255, key: "blue" },
+  { hue: 195, key: "cyan" },
+  { hue: 155, key: "green" },
+  { hue: 320, key: "magenta" },
 ];
 
 function AccentSwatches({ value, onChange }: { value: number; onChange: (v: number) => void }) {
+  const { t } = useTranslation();
   return (
     <div style={{ display: "flex", gap: 9, flexWrap: "wrap" }}>
       {ACCENT_PRESETS.map((p) => {
         const active = p.hue === value;
         return (
-          <button key={p.hue} title={p.name} onClick={() => onChange(p.hue)} style={{
+          <button key={p.hue} title={t(`accents.${p.key}`)} onClick={() => onChange(p.hue)} style={{
             width: 34, height: 34, borderRadius: 9, cursor: "pointer", padding: 0,
             background: `oklch(0.6 0.2 ${p.hue})`,
             border: active ? "2px solid var(--text)" : "2px solid transparent",
@@ -47,6 +49,7 @@ const TWEAK_DEFAULTS = {
 };
 
 export default function App() {
+  const { t } = useTranslation();
   const [pool, setPool] = useState(() => new EntropyPool());
   const [step, setStepRaw] = useState(1);
   const [maxStep, setMaxStep] = useState(1);
@@ -55,14 +58,14 @@ export default function App() {
     setMaxStep((m) => Math.max(m, n));
   }, []);
   const [, setTick] = useState(0);
-  const bump = useCallback(() => setTick((t) => (t + 1) % 1e9), []);
+  const bump = useCallback(() => setTick((tk) => (tk + 1) % 1e9), []);
   const [sysDone, setSysDone] = useState(false);
   const [humanDone, setHumanDone] = useState(false);
   const [tweaksOpen, setTweaksOpen] = useState(false);
 
-  const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
-  const theme = t.dark ? "dark" : "light";
-  const accent = String(t.accentHue);
+  const [tw, setTweak] = useTweaks(TWEAK_DEFAULTS);
+  const theme = tw.dark ? "dark" : "light";
+  const accent = String(tw.accentHue);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -90,7 +93,7 @@ export default function App() {
         <Header
           theme={theme}
           setTheme={(v) => setTweak("dark", v === "dark")}
-          algo={t.hashAlgo as AlgoId}
+          algo={tw.hashAlgo as AlgoId}
           setAlgo={(v) => setTweak("hashAlgo", v)}
           onOpenTweaks={() => setTweaksOpen((o) => !o)}
         />
@@ -99,7 +102,6 @@ export default function App() {
           <Stepper step={step} maxStep={maxStep} onJump={(n) => setStepRaw(n)} />
           <div style={{ borderTop: "1px solid var(--border-2)", margin: "0 -26px 22px", paddingTop: 22 }} />
 
-          {/* Pasos 1 y 2 siempre montados para conservar estado */}
           <div style={{ display: step === 1 ? "block" : "none" }}>
             <SystemEntropy
               pool={pool}
@@ -125,18 +127,17 @@ export default function App() {
           </div>
           {step === 3 && (
             <KeyResult
-              key={t.defaultType}
+              key={tw.defaultType}
               pool={pool}
-              defaultType={t.defaultType}
-              algo={t.hashAlgo as AlgoId}
+              defaultType={tw.defaultType}
+              algo={tw.hashAlgo as AlgoId}
             />
           )}
         </div>
 
-        {/* Footer */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 16, padding: "0 4px" }}>
           <div style={{ fontSize: 12.5, color: "var(--text-3)", display: "flex", alignItems: "center", gap: 7 }}>
-            <Icon name="lock" size={13} /> Todo ocurre en tu navegador · 100% offline
+            <Icon name="lock" size={13} /> {t("footer.offline")}
           </div>
           {step > 1 ? (
             <button
@@ -146,36 +147,35 @@ export default function App() {
                 fontSize: 13, fontWeight: 600, color: "var(--text-2)", padding: "6px 4px",
               }}
             >
-              {step === 3 ? "↺ Empezar de nuevo" : "← Atrás"}
+              {step === 3 ? t("footer.restart") : t("footer.back")}
             </button>
           ) : <span />}
         </div>
       </div>
 
-      {/* Tweaks Panel */}
       <TweaksPanel open={tweaksOpen} onClose={() => setTweaksOpen(false)}>
-        <TweakSection label="Apariencia" />
-        <TweakRow label="Color de acento">
-          <AccentSwatches value={t.accentHue} onChange={(v) => setTweak("accentHue", v)} />
+        <TweakSection label={t("tweaks.sections.appearance")} />
+        <TweakRow label={t("tweaks.rows.accentColor")}>
+          <AccentSwatches value={tw.accentHue} onChange={(v) => setTweak("accentHue", v)} />
         </TweakRow>
-        <TweakToggle label="Modo oscuro" value={t.dark} onChange={(v) => setTweak("dark", v)} />
-        <TweakSection label="Generador" />
+        <TweakToggle label={t("tweaks.rows.darkMode")} value={tw.dark} onChange={(v) => setTweak("dark", v)} />
+        <TweakSection label={t("tweaks.sections.generator")} />
         <TweakSelect
-          label="Tipo por defecto"
-          value={t.defaultType}
+          label={t("tweaks.rows.defaultType")}
+          value={tw.defaultType}
           options={[
-            { value: "hex",    label: "Hexadecimal" },
-            { value: "base64", label: "Base64 URL-safe" },
-            { value: "apikey", label: "API key alfanumérica" },
-            { value: "uuid",   label: "UUID v4" },
-            { value: "pin",    label: "PIN numérico" },
+            { value: "hex",    label: t("keyResult.types.hex") },
+            { value: "base64", label: t("keyResult.types.base64") },
+            { value: "apikey", label: t("keyResult.types.apikey") },
+            { value: "uuid",   label: t("keyResult.types.uuid") },
+            { value: "pin",    label: t("keyResult.types.pin") },
           ]}
           onChange={(v) => setTweak("defaultType", v)}
         />
-        <TweakSection label="Seguridad" />
+        <TweakSection label={t("tweaks.sections.security")} />
         <TweakSelect
-          label="Algoritmo de derivación"
-          value={t.hashAlgo}
+          label={t("tweaks.rows.derivationAlgo")}
+          value={tw.hashAlgo}
           options={ALGOS.map((a) => ({ value: a.id, label: a.label }))}
           onChange={(v) => setTweak("hashAlgo", v)}
         />
